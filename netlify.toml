@@ -1,12 +1,7 @@
 [build]
-  environment = { NODE_VERSION = "18" }
-  base = "/"
   command = "npm run build"
   publish = "dist"
 
 [build.environment]
-  NETLIFY_USE_YARN = "true"
   NODE_VERSION = "18"
-
-[build.image]
-  value = "ubuntu-22.04" # jammy image
+  NETLIFY_USE_YARN = "true"
